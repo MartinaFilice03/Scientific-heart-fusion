@@ -103,7 +103,8 @@ scientific-heart-fusion/
 ├── scientific_visualization.py # Python script to generate the graphs
 │
 ├── data/
-│ └── heart.csv
+│ └── heart-con-duplicati
+│ └── heart-senza-duplicati
 │
 └── README.md # This file
 ```
