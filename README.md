@@ -98,12 +98,14 @@ Esegui le celle sequenzialmente per generare:
 ```plaintext
 scientific-heart-fusion/
 │
-├── Scientific_visualization.ipynb
+├── Scientific_visualization.ipynb # Notebook Principale
+│
+├── scientific_visualization.py # Script Python per generare i grafici
 │
 ├── data/
 │   └── heart.csv
 │
-└── README.md
+└── README.md # Questo file
 ```
 
 ---
