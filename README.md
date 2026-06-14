@@ -1,148 +1,148 @@
 # Scientific Heart Disease Fusion - Visual & Computational Analytics
 
-Analisi scientifica avanzata per l'esplorazione, la scomposizione latente e la classificazione predittiva del rischio cardiologico, combinando tecniche di visualizzazione scientifica (SciViz), modellazione non supervisionata multi-vista e machine learning spiegabile (XAI).
+Advanced scientific analytics for the exploration, latent decomposition, and predictive classification of heart disease risk, combining scientific visualization (SciViz) techniques, unsupervised multi-view modeling, and explainable machine learning (XAI).
 
 ---
 
-## 📊 Contenuto
+## 📊 Contents
 
-Questo repository contiene:
+This repository contains:
 
-* **Analisi completa** (`Scientific_visualization.ipynb`)
-  Notebook Jupyter con l'intera pipeline di data-auditing, scomposizione latente (PCA), clustering (K-Means), modellazione predittiva (Random Forest) e metriche di affidabilità avanzate.
+* **Complete Analysis** (`Scientific_visualization.ipynb`)
+Jupyter notebook with the entire data-auditing pipeline, latent decomposition (PCA), clustering (K-Means), predictive modeling (Random Forest), and advanced reliability metrics.
 
-* **Presentazione del Progetto** (`Scientific_Visualization_Heart_Project_Draft.pptx`)
-  Slide complete per la discussione, strutturate per mappare la convergenza tra l'analisi visiva e i risultati computazionali.
+* **Project Presentation** (`Scientific_Visualization_Heart_Project_Draft.pptx`)
+Complete discussion slides, structured to map the convergence between visual analysis and computational results.
 
 * **Dataset** (`heart.csv`)
-  Database clinico contenente i profili fisiologici, anagrafici e diagnostici dei pazienti.
+Clinical database containing patient physiological, demographic, and diagnostic profiles.
 
 ---
 
-## 🎯 Obiettivi
+## 🎯 Objectives
 
 ### Data Quality Audit
 
-Rilevare l'integrità del dataset, verificare il bilanciamento delle coorti e mappare le interazioni lineari e distribuzionali delle feature.
+Detect dataset integrity, verify cohort balance, and map linear and distributional feature interactions.
 
 ### High-Dimensional Analytics
 
-Visualizzare le traiettorie geometriche dei pazienti nello spazio multidimensionale prima della riduzione latente.
+Visualize patient geometric trajectories in multidimensional space before latent reduction.
 
 ### Multi-View Factor Fusion
 
-Simulare dinamiche di fusione dati avanzate separando i parametri in due viste (*Clinical View* e *Diagnostic View*) per estrarre i fattori latenti condivisi (approccio in stile MOFA – *Multi-Omics Factor Analysis*).
+Simulate advanced data fusion dynamics by separating parameters into two views (Clinical View and Diagnostic View) to extract shared latent factors (MOFA-style approach – Multi-Omics Factor Analysis).
 
 ### Unsupervised Strategy
 
-Raggruppare i profili dei pazienti in modo puramente geometrico tramite K-Means, validando l'omogeneità delle coorti tramite analisi di Silhouette.
+Cluster patient profiles purely geometrically using K-Means, validating cohort homogeneity using Silhouette analysis.
 
 ### Computational Validation
 
-Addestrare un modello Random Forest per convalidare lo spazio latente, testandone la trasparenza (*Global Explainability*) e l'affidabilità medica (*Probability Calibration Curve*).
+Train a Random Forest model to validate the latent space, testing its transparency (*Global Explainability*) and medical reliability (*Probability Calibration Curve*).
 
 ---
 
-## 📦 Installazione
+## 📦 Installation
 
-### Prerequisiti
+### Prerequisites
 
 * Python 3.8+
-* Google Colab oppure Jupyter Notebook locale
+* Google Colab or local Jupyter Notebook
 
-### Setup Ambiente
+### Environment Setup
 
-#### 1. Clona il repository
+#### 1. Clone the repository
 
 ```bash
-git clone https://github.com/IL_TUO_USERNAME/scientific-heart-fusion.git
+git clone https://github.com/YOURUSERNAME/scientific-heart-fusion.git
 cd scientific-heart-fusion
 ```
 
-#### 2. Installa le dipendenze
+#### 2. Install dependencies
 
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn scipy
 ```
 
-#### 3. Verifica l'ambiente
+#### 3. Verify the environment
 
 ```bash
-python -c "import pandas, numpy, seaborn, matplotlib, sklearn, scipy; print('Ambiente configurato con successo!')"
+python -c "import pandas, numpy, seaborn, matplotlib, sklearn, scipy; print('Environment successfully configured!')"
 ```
 
 ---
 
-## 🚀 Utilizzo
+## 🚀 Usage
 
-### Eseguire l'analisi completa
+### Run Complete analysis
 
-Apri il notebook tramite Google Colab oppure Jupyter Lab:
+Open the notebook via Google Colab or Jupyter Lab:
 
 ```bash
 jupyter lab Scientific_visualization.ipynb
 ```
 
-Esegui le celle sequenzialmente per generare:
+Run the cells sequentially to generate:
 
-* Log analitici
-* Audit strutturali
-* Visualizzazioni scientifiche
-* Risultati predittivi
-* Report interpretativi
+* Analytical logs
+* Structural audits
+* Scientific visualizations
+* Predictive results
+* Interpretive reports
 
 ---
 
-## 📁 Struttura del Repository
+## 📁 Repository Structure
 
 ```plaintext
 scientific-heart-fusion/
 │
-├── Scientific_visualization.ipynb # Notebook Principale
+├── Scientific_visualization.ipynb # Main Notebook
 │
-├── scientific_visualization.py # Script Python per generare i grafici
+├── scientific_visualization.py # Python script to generate the graphs
 │
 ├── data/
-│   └── heart.csv
+│ └── heart.csv
 │
-└── README.md # Questo file
+└── README.md # This file
 ```
 
 ---
 
-## 🔬 Metodologia & Pipeline Chronology
+## 🔬 Methodology & Pipeline Chronology
 
-Il framework è suddiviso in fasi computazionali autoconsistenti.
+The framework is divided into self-consistent computational phases.
 
 ### Phase 0 — Pipeline Initialization, Data Sourcing & Architectural Setup
 
-* Stabilizzazione ambiente
-* Import librerie scientifiche
-* Caricamento dati
-* Preparazione matrici
+* Environment Stabilization
+* Scientific Libraries Import
+* Data Loading
+* Matrix Preparation
 
 ---
 
 ### Phase 1 — Data Quality Audit & Exploratory Expression Profiling
 
-* Verifica completezza dataset (**0% missing values**)
-* Analisi del bilanciamento del target (**165 sani vs 138 malati**)
-* Costruzione della **Symmetrical Correlation Matrix**
+* Dataset Completeness Verification (**0% Missing Values**)
+* Target Balance Analysis (**165 Healthy vs. 138 Diseased Patients**)
+* Symmetrical Correlation Matrix Construction
 
 ---
 
 ### Advanced Multi-Panel Violin Framework
 
-Analisi dettagliata della densità asimmetrica (*Skewness*) dei biomarcatori mediante:
+Detailed analysis of biomarker skewness using:
 
 * Violin Plot
-* Strip Plot combinati
+* Combined Strip Plots
 
 ---
 
 ### High-Dimensional Geometric Trajectories
 
-Studio delle traiettorie multidimensionali pre-scaling attraverso:
+Multidimensional pre-scaling trajectories using:
 
 * Andrews Fourier Curves
 * Standardized Parallel Coordinates Plot
@@ -151,39 +151,39 @@ Studio delle traiettorie multidimensionali pre-scaling attraverso:
 
 ### Latent Space Decomposition & Unsupervised Clustering
 
-Applicazione di:
+Application of:
 
 * PCA
 * Scree Plot
 * Biplot
-* Clustering K-Means
-* Analisi dei profili di Silhouette
+* K-Means Clustering
+* Silhouette Profile Analysis
 
 ---
 
 ### Multi-View Integration (Late Fusion Framework)
 
-Separazione in:
+Separation into:
 
-* **Clinical View**
-* **Diagnostic View**
+* Clinical View
+* Diagnostic View
 
-Analisi effettuate:
+Analyses performed:
 
-* Estrazione fattori latenti condivisi
+* Shared Latent Factor Extraction
 * Variance Explained per View Matrix
-* Feature Loadings Profile
+* Feature Loading Profile
 * Hierarchical Clustered Heatmap
 
 ---
 
 ### Predictive Modeling & Operational Auditing
 
-Addestramento e ottimizzazione di:
+Training and optimization of:
 
 * Random Forest Classifier
 
-Valutazione tramite:
+Evaluation using:
 
 * Confusion Matrix
 * ROC–AUC
@@ -193,73 +193,72 @@ Valutazione tramite:
 
 ### Probability Calibration & Reliability Assessment
 
-Validazione dell'affidabilità probabilistica mediante:
+Validation of probabilistic reliability using:
 
 * Reliability Diagram
-* Probability Calibration Curve
+* Probability Calibration Curves
 
 ---
 
 ### Global Explainability (XAI)
 
-Interpretabilità del modello tramite:
+Model interpretability through:
 
 * Mean Decrease in Gini Impurity
-* Ranking delle feature cliniche
-* Confronto con evidenze visive
+* Clinical Feature Ranking
+* Comparison with Visual Evidence
 
 ---
 
-## 📈 Risultati Principali
+## 📈 Main Results
+### Visual-Computational Concordance
 
-### Concordanza Visivo–Computazionale
+The dominant geometric vectors found in the PCA biplot and stratification boxplots coincide with the most influential features selected by the Random Forest model.
 
-I vettori geometrici dominanti emersi nel Biplot della PCA e nei boxplot di stratificazione coincidono con le feature maggiormente influenti selezionate dal modello Random Forest.
+### Clinical Reliability
 
-### Affidabilità Clinica
+The decision forest achieves an accuracy of **84%**.
 
-La foresta decisionale raggiunge un'accuratezza dell'**84%**.
+The **Reliability Diagram** shows a good match between predicted probabilities and observed disease frequency.
 
-Il **Reliability Diagram** mostra una buona corrispondenza tra probabilità predette e frequenza osservata della patologia.
+### Multi-View Effectiveness
 
-### Efficacia Multi-View
-
-La scomposizione dei fattori latenti permette di isolare con maggiore rigore i fenotipi patologici ad alto rischio miocardico rispetto ai profili sani.
+The decomposition of latent factors allows for more rigorous isolation of high-risk myocardial disease phenotypes compared to healthy profiles.
 
 ---
 
-## 🛠️ Tecnologie Utilizzate
+## 🛠️ Technologies Used
 
 ### Python 3.8+
 
 ### Pandas & NumPy
 
-Data auditing gerarchico e calcoli matriciali.
+Hierarchical data auditing and matrix calculations.
 
 ### Matplotlib & Seaborn
 
-Visualizzazione scientifica avanzata.
+Advanced scientific visualization.
 
 ### Scikit-learn
 
-Machine Learning supervisionato e non supervisionato.
+Supervised and unsupervised machine learning.
 
 ### SciPy
 
-Analisi di Fourier, statistica descrittiva e metriche di distribuzione.
+Fourier analysis, descriptive statistics, and distribution metrics.
 
 ---
 
-## 📄 Licenza
+## 📄 License
 
-Questo progetto è stato sviluppato a scopi accademici e di ricerca nell'ambito del corso di **Scientific Visualization**.
+This project was developed for academic and research purposes as part of the Scientific Visualization course.
 
 ---
 
-## 👤 Autori
+## 👤 Authors
 
 **Martina Filice**
 **Corinne D’Elia**
 
-Università degli Studi di Milano
-Corso di Scientific Visualization
+University of Milan
+Scientific Visualization Course
