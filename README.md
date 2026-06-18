@@ -110,6 +110,33 @@ scientific-heart-fusion/
 ```
 
 ---
+## Dataset Description
+
+The dataset used in this project (`heart.csv`) contains clinical and demographic data collected to support the classification and prediction of heart disease risk. The dataset consists of **14 attributes** (columns) described below:
+
+### Feature Overview
+
+| Column | Type | Description | Values / Legend |
+| :--- | :--- | :--- | :--- |
+| **age** | Numerical | Age of the patient in years. | - |
+| **sex** | Binary | Biological sex of the patient. | `1` = Male<br>`0` = Female |
+| **cp** | Categorical | Chest pain type experienced by the patient. | `0` = Typical angina<br>`1` = Atypical angina<br>`2` = Non-anginal pain<br>`3` = Asymptomatic |
+| **trestbps**| Numerical | Resting blood pressure (in mm Hg on admission to the hospital). | - |
+| **chol** | Numerical | Serum cholesterol level in mg/dl. | - |
+| **fbs** | Binary | Fasting blood sugar > 120 mg/dl. | `1` = True<br>`0` = False |
+| **restecg** | Categorical | Resting electrocardiographic results. | `0` = Normal<br>`1` = ST-T wave abnormality<br>`2` = Showing probable or definite left ventricular hypertrophy |
+| **thalach** | Numerical | Maximum heart rate achieved during the stress test. | - |
+| **exang** | Binary | Exercise-induced angina. | `1` = Yes<br>`0` = No |
+| **oldpeak** | Numerical | ST depression induced by exercise relative to rest. | Continuous decimal value |
+| **slope** | Categorical | The slope of the peak exercise ST segment. | `0` = Upsloping<br>`1` = Flat<br>`2` = Downsloping |
+| **ca** | Numerical | Number of major vessels (0-3) colored by fluoroscopy. | Integer from `0` to `4` (including potentially missing/null values) |
+| **thal** | Categorical | Results of the thalassemia blood test. | `1` = Normal<br>`2` = Fixed defect<br>`3` = Reversable defect |
+| **target** | Binary | Target variable (presence or risk of heart disease). | `1` = Presence / Higher risk<br>`0` = Absence / Lower risk |
+
+### Data Note
+*The raw data file may contain duplicate records that require a preliminary data cleaning and preprocessing step before being fed into Machine Learning models.*
+
+--
 
 ## 🔬 Methodology & Pipeline Chronology
 
