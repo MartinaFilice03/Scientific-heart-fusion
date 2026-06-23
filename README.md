@@ -55,7 +55,7 @@ Train a Random Forest model to validate the latent space, testing its transparen
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOURUSERNAME/scientific-heart-fusion.git
+git clone https://github.com/MartinaFilice03/scientific-heart-fusion.git
 cd scientific-heart-fusion
 ```
 
