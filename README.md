@@ -11,11 +11,11 @@ This repository contains:
 * **Complete Analysis** (`Scientific_visualization.ipynb`)
 Jupyter notebook with the entire data-auditing pipeline, latent decomposition (PCA), clustering (K-Means), predictive modeling (Random Forest), and advanced reliability metrics.
 
-* **Project Presentation** (`Scientific_Visualization_Heart_Project_Draft.pptx`)
-Complete discussion slides, structured to map the convergence between visual analysis and computational results.
+* **Dataset** (`heart-con-duplicati.xlsx`)
+Clinical database containing patient physiological, demographic and diagnostic profiles.
 
-* **Dataset** (`heart.csv`)
-Clinical database containing patient physiological, demographic, and diagnostic profiles.
+* **Dataset** (`heart-con-duplicati.xlsx`)
+Clinical database containing patient physiological, demographic and diagnostic profiles without duplicates.
 
 ---
 
