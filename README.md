@@ -55,8 +55,8 @@ Train a Random Forest model to validate the latent space, testing its transparen
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MartinaFilice03/scientific-heart-fusion.git
-cd scientific-heart-fusion
+git clone https://github.com/MartinaFilice03/Scientific-heart-fusion.git
+cd Scientific-heart-fusion
 ```
 
 #### 2. Install dependencies
@@ -112,7 +112,7 @@ scientific-heart-fusion/
 ---
 ## Dataset Description
 
-The dataset used in this project (`heart.csv`) contains clinical and demographic data collected to support the classification and prediction of heart disease risk. The dataset consists of **14 attributes** (columns) described below:
+The dataset used in this project (`heart-con-duplicati.xlsx`) contains clinical and demographic data collected to support the classification and prediction of heart disease risk. The dataset consists of **14 attributes** (columns) described below:
 
 ### Feature Overview
 
@@ -135,8 +135,6 @@ The dataset used in this project (`heart.csv`) contains clinical and demographic
 
 ### Data Note
 *The raw data file may contain duplicate records that require a preliminary data cleaning and preprocessing step before being fed into Machine Learning models.*
-
---
 
 ## 🔬 Methodology & Pipeline Chronology
 
