@@ -1,6 +1,6 @@
 # Scientific Heart Disease Fusion - Visual & Computational Analytics
 
-Advanced scientific analytics for the exploration, latent decomposition, and predictive classification of heart disease risk, combining scientific visualization (SciViz) techniques, unsupervised multi-view modeling, and explainable machine learning (XAI).
+Advanced scientific analytics for the exploration, latent space decomposition, and predictive classification of heart disease risk. This repository implements a robust data-auditing and scientific visualization (SciViz) pipeline combined with unsupervised multi-view alignment and Explainable AI (XAI) diagnostics.
 
 ---
 
@@ -8,67 +8,63 @@ Advanced scientific analytics for the exploration, latent decomposition, and pre
 
 This repository contains:
 
-* **Complete Analysis** (`Scientific_visualization.ipynb`)
-Jupyter notebook with the entire data-auditing pipeline, latent decomposition (PCA), clustering (K-Means), predictive modeling (Random Forest), and advanced reliability metrics.
+* **Complete Interactive Analysis** (`Scientific_visualization.ipynb`)
+  Jupyter notebook with the entire data-auditing pipeline, outlier detection, latent decomposition (PCA), unsupervised clustering, multi-view late fusion, and global model explainability.
 
-* **Dataset** (`heart-con-duplicati.xlsx`)
-Clinical database containing patient physiological, demographic and diagnostic profiles.
+* **Production Script** (`scientific_visualization.py`)
+  Python source code compiled to clean the data, execute the mathematical models, and output the advanced scientific visualizations.
 
-* **Dataset** (`heart-con-duplicati.xlsx`)
-Clinical database containing patient physiological, demographic and diagnostic profiles without duplicates.
+* **Raw Dataset** (`data/heart-con-duplicati.xlsx`)
+  Clinical database containing original patient physiological, demographic, and diagnostic profiles (including repeated records).
+
+* **Consolidated Dataset** (`data/heart-senza-duplicati.xlsx`)
+  Preprocessed clinical database with exact duplicate profiles removed to prevent statistical bias.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
-### Data Quality Audit
+### Data Quality Audit & Filtering
+Verify dataset integrity through matrix completeness checks, continuous feature outlier screening, exact duplicate cleansing, and multi-scale cross-correlation profiling.
 
-Detect dataset integrity, verify cohort balance, and map linear and distributional feature interactions.
+### Latent Space Deconstruction
+Reduce the high-dimensional standardized feature space using Principal Component Analysis (PCA) to map structural biplots and analyze individual component explained variance.
 
-### High-Dimensional Analytics
+### Unsupervised Partitioning Validation
+Cluster patient profiles purely geometrically using K-Means and Agglomerative Hierarchical Linkage, cross-verifying cluster boundaries with label-invariant consensus metrics (ARI, NMI).
 
-Visualize patient geometric trajectories in multidimensional space before latent reduction.
+### Multi-View Late Fusion Framework
+Simulate a multi-omics block structure by separating variables into distinct *Clinical/Demographic View* and *Diagnostic/Stress-Test View* to extract and plot cross-domain Euclidean similarities.
 
-### Multi-View Factor Fusion
-
-Simulate advanced data fusion dynamics by separating parameters into two views (Clinical View and Diagnostic View) to extract shared latent factors (MOFA-style approach – Multi-Omics Factor Analysis).
-
-### Unsupervised Strategy
-
-Cluster patient profiles purely geometrically using K-Means, validating cohort homogeneity using Silhouette analysis.
-
-### Computational Validation
-
-Train a Random Forest model to validate the latent space, testing its transparency (*Global Explainability*) and medical reliability (*Probability Calibration Curve*).
+### Computational Diagnostics & XAI
+Train an Ensemble Random Forest to map global feature importance (Gini Impurity) and fit a multivariable Logistic Regression model to calculate exact adjusted Odds Ratios ($OR$) and $95\%$ Confidence Intervals.
 
 ---
 
 ## 📦 Installation
 
 ### Prerequisites
-
 * Python 3.8+
-* Google Colab or local Jupyter Notebook
+* Jupyter Lab / Jupyter Notebook or Google Colab environment
 
 ### Environment Setup
 
 #### 1. Clone the repository
-
 ```bash
-git clone https://github.com/MartinaFilice03/Scientific-heart-fusion.git
+git clone [https://github.com/MartinaFilice03/Scientific-heart-fusion.git](https://github.com/MartinaFilice03/Scientific-heart-fusion.git)
 cd Scientific-heart-fusion
 ```
 
 #### 2. Install dependencies
 
 ```bash
-pip install pandas numpy seaborn matplotlib scikit-learn scipy
+pip install pandas numpy seaborn matplotlib scikit-learn scipy statsmodels openpyxl
 ```
 
 #### 3. Verify the environment
 
 ```bash
-python -c "import pandas, numpy, seaborn, matplotlib, sklearn, scipy; print('Environment successfully configured!')"
+python -c "import pandas, numpy, seaborn, matplotlib, sklearn, scipy, statsmodels; print('Environment successfully configured!')"
 ```
 
 ---
@@ -77,10 +73,15 @@ python -c "import pandas, numpy, seaborn, matplotlib, sklearn, scipy; print('Env
 
 ### Run Complete analysis
 
-Open the notebook via Google Colab or Jupyter Lab:
+Open and run the core interactive notebook:
 
 ```bash
 jupyter lab Scientific_visualization.ipynb
+```
+
+Or execute the production script sequentially to generate the scientific plots:
+```bash
+python scientific_visualization.py
 ```
 
 Run the cells sequentially to generate:
@@ -98,15 +99,14 @@ Run the cells sequentially to generate:
 ```plaintext
 scientific-heart-fusion/
 │
-├── Scientific_visualization.ipynb # Main Notebook
-│
-├── scientific_visualization.py # Python script to generate the graphs
+├── Scientific_visualization.ipynb    # Main Analysis Notebook
+├── scientific_visualization.py       # Python Production Script
 │
 ├── data/
-│ └── heart-con-duplicati
-│ └── heart-senza-duplicati
+│   ├── heart-con-duplicati.xlsx      # Raw Dataset (with duplicates)
+│   └── heart-senza-duplicati.xlsx    # Clean Dataset (without duplicates)
 │
-└── README.md # This file
+└── README.md                         # Project Documentation
 ```
 
 ---
@@ -138,118 +138,19 @@ The dataset used in this project (`heart-con-duplicati.xlsx`) contains clinical 
 
 ## 🔬 Methodology & Pipeline Chronology
 
-The framework is divided into self-consistent computational phases.
+The framework is divided into self-consistent computational phases:
 
-### Phase 0 — Pipeline Initialization, Data Sourcing & Architectural Setup
-
-* Environment Stabilization
-* Scientific Libraries Import
-* Data Loading
-* Matrix Preparation
-
----
-
-### Phase 1 — Data Quality Audit & Exploratory Expression Profiling
-
-* Dataset Completeness Verification (**0% Missing Values**)
-* Target Balance Analysis (**165 Healthy vs. 138 Diseased Patients**)
-* Symmetrical Correlation Matrix Construction
-
----
-
-### Advanced Multi-Panel Violin Framework
-
-Detailed analysis of biomarker skewness using:
-
-* Violin Plot
-* Combined Strip Plots
-
----
-
-### High-Dimensional Geometric Trajectories
-
-Multidimensional pre-scaling trajectories using:
-
-* Andrews Fourier Curves
-* Standardized Parallel Coordinates Plot
-
----
-
-### Latent Space Decomposition & Unsupervised Clustering
-
-Application of:
-
-* PCA
-* Scree Plot
-* Biplot
-* K-Means Clustering
-* Silhouette Profile Analysis
-
----
-
-### Multi-View Integration (Late Fusion Framework)
-
-Separation into:
-
-* Clinical View
-* Diagnostic View
-
-Analyses performed:
-
-* Shared Latent Factor Extraction
-* Variance Explained per View Matrix
-* Feature Loading Profile
-* Hierarchical Clustered Heatmap
-
----
-
-### Predictive Modeling & Operational Auditing
-
-Training and optimization of:
-
-* Random Forest Classifier
-
-Evaluation using:
-
-* Confusion Matrix
-* ROC–AUC
-* Precision–Recall Curve
-
----
-
-### Probability Calibration & Reliability Assessment
-
-Validation of probabilistic reliability using:
-
-* Reliability Diagram
-* Probability Calibration Curves
-
----
-
-### Global Explainability (XAI)
-
-Model interpretability through:
-
-* Mean Decrease in Gini Impurity
-* Clinical Feature Ranking
-* Comparison with Visual Evidence
-
----
-
-## 📈 Main Results
-### Visual-Computational Concordance
-
-The dominant geometric vectors found in the PCA biplot and stratification boxplots coincide with the most influential features selected by the Random Forest model.
-
-### Clinical Reliability
-
-The decision forest achieves an accuracy of **84%**.
-
-The **Reliability Diagram** shows a good match between predicted probabilities and observed disease frequency.
-
-### Multi-View Effectiveness
-
-The decomposition of latent factors allows for more rigorous isolation of high-risk myocardial disease phenotypes compared to healthy profiles.
+* **Phase 0 — Pipeline Initialization, Data Sourcing & Architectural Setup:** Stabilization of the computational environment (`Warning Filter`) and loading of scientific dependencies.
+* **Phase 1 — Data Quality Audit & Exploratory Expression Profiling:** Verification of matrix completeness and removal of duplicate records to ensure unique patient profiles.
+* **Phase 2 - Full Cross-Correlation Matrix:** Analysis of global dataset associations through a full symmetrical cross-correlation matrix.
+* **Phase 3 — Data Preprocessing, Feature Scaling & Geometric Alignment:** Target isolation and standard Z-score feature scaling to ensure isotropic variance across features.
+* **Phase 4 — Exploratory Data Analysis & Primary Correlation Insights:** Calculation of targeted Pearson correlation coefficients relative to the diagnostic endpoint (`target`).
+* **Phase 5 — Latent Space Geometry & Dimensionality Reduction (PCA Biplot):** Dimensionality reduction via PCA, individual/cumulative variance computation (Scree Plot), and loading vectors projection (Biplot).
+* **Phase 6 — Latent Space Geometry & 2D Cohort Projections:** Two-dimensional patient space mapping and mathematical optimization of cluster numbers (Elbow Method and Silhouette Score).
+* **Phase 7 — Unsupervised Partitioning & Latent Space Boundary Auditing (K-Means Evaluation):** Unsupervised clustering ($K=2$), concordance index calculations (ARI, NMI), and topological validation via Hierarchical Linkage Dendrograms.
+* **Phase 8 — Advanced Patient Distribution & Biomarker Stratification:** Evaluation of main biomarker population densities (`age`, `thalach`, `oldpeak`) stratified by clinical cohort.
+* **Phase 9 — Multi-Source Data Fusion (Integrating Clinical and Diagnostic Profiles):** Late Fusion of the primary latent components from separate views (*Clinical* vs *Diagnostic*) and calculation of patient Euclidean distance matrices.
+* **Phase 10 — Global Model Explainability & Computational Pathology Drivers:** Predictive validation of an ensemble Random Forest (Confusion Matrix, ROC-AUC), feature importance ranking (Gini Impurity), and multivariable Logistic Regression Odds Ratios ($OR$, $95\%$ CI).
 
 ---
 
