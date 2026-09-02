@@ -37,7 +37,7 @@ Cluster patient profiles purely geometrically using K-Means and Agglomerative Hi
 Simulate a multi-omics block structure by separating variables into distinct *Clinical/Demographic View* and *Diagnostic/Stress-Test View* to extract and plot cross-domain Euclidean similarities.
 
 ### Computational Diagnostics & XAI
-Train an Ensemble Random Forest to map global feature importance (Gini Impurity) and fit a multivariable Logistic Regression model to calculate exact adjusted Odds Ratios ($OR$) and $95\%$ Confidence Intervals.
+Train an Ensemble Random Forest to map global feature importance (Gini Impurity) and fit a multivariable Logistic Regression model to calculate exact adjusted Odds Ratios ($OR$) and 95% Confidence Intervals.
 
 ---
 
@@ -147,10 +147,10 @@ The framework is divided into self-consistent computational phases:
 * **Phase 4 — Exploratory Data Analysis & Primary Correlation Insights:** Calculation of targeted Pearson correlation coefficients relative to the diagnostic endpoint (`target`).
 * **Phase 5 — Latent Space Geometry & Dimensionality Reduction (PCA Biplot):** Dimensionality reduction via PCA, individual/cumulative variance computation (Scree Plot), and loading vectors projection (Biplot).
 * **Phase 6 — Latent Space Geometry & 2D Cohort Projections:** Two-dimensional patient space mapping and mathematical optimization of cluster numbers (Elbow Method and Silhouette Score).
-* **Phase 7 — Unsupervised Partitioning & Latent Space Boundary Auditing (K-Means Evaluation):** Unsupervised clustering ($K=2$), concordance index calculations (ARI, NMI), and topological validation via Hierarchical Linkage Dendrograms.
+* **Phase 7 — Unsupervised Partitioning & Latent Space Boundary Auditing (K-Means Evaluation):** Unsupervised clustering (K=2), concordance index calculations (ARI, NMI), and topological validation via Hierarchical Linkage Dendrograms.
 * **Phase 8 — Advanced Patient Distribution & Biomarker Stratification:** Evaluation of main biomarker population densities (`age`, `thalach`, `oldpeak`) stratified by clinical cohort.
 * **Phase 9 — Multi-Source Data Fusion (Integrating Clinical and Diagnostic Profiles):** Late Fusion of the primary latent components from separate views (*Clinical* vs *Diagnostic*) and calculation of patient Euclidean distance matrices.
-* **Phase 10 — Global Model Explainability & Computational Pathology Drivers:** Predictive validation of an ensemble Random Forest (Confusion Matrix, ROC-AUC), feature importance ranking (Gini Impurity), and multivariable Logistic Regression Odds Ratios ($OR$, $95\%$ CI).
+* **Phase 10 — Global Model Explainability & Computational Pathology Drivers:** Predictive validation of an ensemble Random Forest (Confusion Matrix, ROC-AUC), feature importance ranking (Gini Impurity), and multivariable Logistic Regression Odds Ratios ($OR$, 95% CI).
 
 ---
 
